@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="341.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ilabquality.gtaf.gtafgui.variableSelector.VariablesSelectorController">
+   <children>
+      <ListView fx:id="availableVariablesList" layoutX="24.0" layoutY="21.0" prefHeight="259.0" prefWidth="292.0" AnchorPane.bottomAnchor="316.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="21.0" />
+      <ListView fx:id="testSuiteVariablesList" layoutX="25.0" layoutY="298.0" prefHeight="281.0" prefWidth="292.0" />
+      <Label layoutX="24.0" layoutY="6.0" text="Instance Variables" />
+      <Label layoutX="24.0" layoutY="280.0" text="Test Suite Variables" />
+   </children>
+</AnchorPane>

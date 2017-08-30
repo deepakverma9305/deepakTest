@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="src/ExternalJars/com.fasterxml.jackson.annotations.jar"/>
+	<classpathentry kind="lib" path="src/ExternalJars/com.fasterxml.jackson.databind.jar"/>
+	<classpathentry kind="lib" path="src/ExternalJars/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="src/ExternalJars/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="src/ExternalJars/jackson-annotations-2.1.4.jar"/>
+	<classpathentry kind="lib" path="src/ExternalJars/jackson-core-2.6.7.jar"/>
+	<classpathentry kind="lib" path="src/ExternalJars/jackson-databind-2.1.4.jar"/>
+	<classpathentry kind="lib" path="src/ExternalJars/jdom-2.0.6.jar"/>
+	<classpathentry kind="lib" path="src/ExternalJars/jersey-bundle-1.17.1.jar"/>
+	<classpathentry kind="lib" path="src/ExternalJars/joda-time-2.1.jar"/>
+	<classpathentry kind="lib" path="src/ExternalJars/json-20080701.jar"/>
+	<classpathentry kind="lib" path="src/ExternalJars/jxl-2.6.12.jar"/>
+	<classpathentry kind="lib" path="src/ExternalJars/postgresql-9.4.1209.jre7.jar"/>
+	<classpathentry kind="lib" path="src/ExternalJars/sshj-0.14.0.jar"/>
+	<classpathentry kind="lib" path="src/ExternalJars/selenium-server-standalone-3.0.1.jar"/>
+	<classpathentry kind="lib" path="src/ExternalJars/testng-6.9.4.jar"/>
+	<classpathentry kind="lib" path="src/ExternalJars/jcommon-1.0.23.jar"/>
+	<classpathentry kind="lib" path="src/ExternalJars/jcommon-xml-1.0.23.jar"/>
+	<classpathentry kind="lib" path="src/ExternalJars/jfreechart-1.0.19.jar"/>
+	<classpathentry kind="lib" path="src/ExternalJars/javax.mail.jar"/>
+	<classpathentry kind="lib" path="src/ExternalJars/log4j-core-2.1.jar"/>
+	<classpathentry kind="lib" path="src/ExternalJars/slf4j-api-1.7.25.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

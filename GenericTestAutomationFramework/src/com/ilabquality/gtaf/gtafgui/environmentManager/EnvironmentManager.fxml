@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+  <AnchorPane fx:id="jmsTabAP" layoutX="14.0" layoutY="186.0" minHeight="0.0" minWidth="0.0" prefHeight="165.0" prefWidth="718.0">
+         <children>
+            <Label layoutX="40.0" layoutY="59.0" text="Queues :" />
+            <TextField fx:id="contextFactoryText" layoutX="98.0" layoutY="21.0" prefHeight="25.0" prefWidth="301.0" text="com.ibm.websphere.naming.WsnInitialContextFactory" />
+            <Label layoutX="1.0" layoutY="25.0" text="Context Factory:" />
+            <ListView fx:id="queueListView" layoutX="98.0" layoutY="54.0" prefHeight="104.0" prefWidth="301.0" />
+            <Button fx:id="deleteQueueButton" layoutX="525.0" layoutY="133.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Delete" />
+            <Label layoutX="415.0" layoutY="71.0" text="Friendly Name:" />
+            <TextField fx:id="newQueueFriendlyNameText" layoutX="515.0" layoutY="67.0" prefHeight="25.0" prefWidth="192.0" />
+            <CheckBox fx:id="newQueueIsUrgentCheck" layoutX="649.0" layoutY="98.0" mnemonicParsing="false" text="Urgent" />
+            <Button fx:id="saveQueueToEnvButton" layoutX="613.0" layoutY="133.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="Save Queue" />
+            <TextField fx:id="newQueueNameText" layoutX="515.0" layoutY="34.0" prefHeight="25.0" prefWidth="192.0" />
+            <Label layoutX="418.0" layoutY="38.0" text="Queue Name:" />
+         </children>
+      </AnchorPane>
+  <AnchorPane layoutX="25.0" layoutY="336.0" minHeight="0.0" minWidth="0.0" prefHeight="158.0" prefWidth="698.0">
+         <children>
+            <Label layoutX="8.0" layoutY="25.0" text="DB Server IP:" />
+            <Label layoutX="33.0" layoutY="59.0" text="DB SID :" />
+            <Label layoutX="-9.0" layoutY="94.0" text="DB User Name :" />
+            <Label layoutX="5.0" layoutY="128.0" text="DB Password :" />
+            <TextField fx:id="dbServerIP" layoutX="85.0" layoutY="21.0" prefHeight="25.0" prefWidth="301.0" promptText="Enter the Server IP" />
+            <TextField fx:id="dbServerSID" layoutX="85.0" layoutY="55.0" prefHeight="25.0" prefWidth="301.0" promptText="Enter the SID to connect to" />
+            <TextField fx:id="dbUserName" layoutX="85.0" layoutY="90.0" prefHeight="25.0" prefWidth="301.0" promptText="Enter the User Name to use" />
+            <TextField fx:id="dbPassword" layoutX="85.0" layoutY="124.0" prefHeight="25.0" prefWidth="301.0" promptText="Enter the Users password" />
+            <TextField fx:id="serverPort" layoutX="635.0" layoutY="56.0" prefHeight="25.0" prefWidth="56.0" promptText="Port" />
+            <TextField fx:id="schemeText" layoutX="482.0" layoutY="90.0" prefHeight="25.0" prefWidth="209.0" />
+            <Label layoutX="431.0" layoutY="94.0" text="Scheme:" />
+            <TextField fx:id="serverIPText" layoutX="482.0" layoutY="56.0" prefHeight="25.0" prefWidth="115.0" promptText="Server IP" />
+            <Label layoutX="427.0" layoutY="59.0" prefHeight="17.0" prefWidth="53.0" text="Server IP:" />
+            <TextField fx:id="inFactoryText" layoutX="482.0" layoutY="21.0" prefHeight="25.0" prefWidth="209.0" />
+            <Label layoutX="422.0" layoutY="25.0" text="In Factory:" />
+            <Label layoutX="599.0" layoutY="60.0" text="Port:" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="29.0" layoutY="174.0" text="Environments:" AnchorPane.leftAnchor="29.0" AnchorPane.topAnchor="174.0" />
+      <ComboBox fx:id="environmentsCombo" layoutX="110.0" layoutY="170.0" prefHeight="25.0" prefWidth="230.0" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="170.0" />
+      <Button fx:id="addEnvButton" layoutX="347.0" layoutY="170.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Add" AnchorPane.topAnchor="170.0" />
+      <Button fx:id="saveButton" layoutX="631.0" layoutY="516.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="Save Config" />
+      <Button fx:id="deleteButton" layoutX="561.0" layoutY="516.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Delete" visible="false" />
+      <TextField fx:id="newEnvNameText" layoutX="422.0" layoutY="170.0" prefHeight="25.0" prefWidth="230.0" promptText="Enter new Name" visible="false" />
+      <TextField fx:id="trServerIP" layoutX="110.0" layoutY="47.0" prefHeight="25.0" prefWidth="301.0" promptText="Enter the Server IP" text="10.11.24.127" />
+      <Label layoutX="14.0" layoutY="21.0" text="-------------------------------------------------------------Test Repository Information-------------------------------------------------------" />
+      <TextField fx:id="trServerSID" layoutX="110.0" layoutY="83.0" prefHeight="25.0" prefWidth="301.0" promptText="Enter the SID to connect to" text="xe" />
+      <Label layoutX="36.0" layoutY="87.0" text="Server SID :" />
+      <TextField fx:id="trUserName" layoutX="524.0" layoutY="47.0" prefHeight="25.0" prefWidth="148.0" promptText="Enter the User Name to use" text="ATSTest" />
+      <Label layoutX="445.0" layoutY="51.0" text="User Name :" />
+      <TextField fx:id="trPassword" layoutX="524.0" layoutY="83.0" prefHeight="25.0" prefWidth="148.0" promptText="Enter the Users password" text="ATSTest" />
+      <Label layoutX="455.0" layoutY="87.0" text="Password :" />
+      <Label layoutX="48.0" layoutY="51.0" text="Server IP :" />
+      <Label layoutX="14.0" layoutY="144.0" text="-------------------------------------------------------------Test Environment Details---------------------------------------------------------" />
+      <Button fx:id="newEnvNameSaveButton" layoutX="660.0" layoutY="170.0" mnemonicParsing="false" text="Save Env" visible="false" />
+      <Label layoutX="25.0" layoutY="123.0" text="Local Folder :" />
+      <TextField fx:id="trLocalFolderText" layoutX="112.0" layoutY="119.0" prefHeight="25.0" prefWidth="301.0" promptText="Enter the SID to connect to" text="xe" />
+      <Button fx:id="envManageSelectFolderButton" layoutX="445.0" layoutY="119.0" mnemonicParsing="false" text="Select Folder..." />
+   </children>
+</AnchorPane>

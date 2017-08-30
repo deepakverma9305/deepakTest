@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane prefHeight="608.0" prefWidth="1069.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ilabquality.gtaf.gtafgui.variablesManager.VariablesManagerController">
+   <content>
+      <AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="1067.0">
+         <children>
+            <TextArea fx:id="serviceCallText" layoutX="32.0" layoutY="31.0" prefHeight="343.0" prefWidth="689.0" />
+            <Label layoutX="32.0" layoutY="393.0" text="Variable From :" />
+            <TextArea fx:id="fromText" layoutX="120.0" layoutY="389.0" prefHeight="104.0" prefWidth="244.0" />
+            <TextArea fx:id="toText" layoutX="477.0" layoutY="389.0" prefHeight="104.0" prefWidth="244.0" />
+            <Label layoutX="384.0" layoutY="393.0" prefHeight="17.0" prefWidth="63.0" text="Variable To:" />
+            <TextField fx:id="resultText" layoutX="120.0" layoutY="524.0" prefHeight="25.0" prefWidth="125.0" />
+            <Label layoutX="72.0" layoutY="528.0" text="Result :" />
+            <Label layoutX="303.0" layoutY="524.0" text="Save as :" />
+            <TextField fx:id="saveAsID" layoutX="356.0" layoutY="520.0" prefHeight="25.0" prefWidth="365.0" />
+            <Button fx:id="saveButton" layoutX="356.0" layoutY="553.0" maxWidth="80.0" minWidth="80.0" mnemonicParsing="false" prefWidth="80.0" text="Save" />
+            <Button fx:id="cancelButton" layoutX="641.0" layoutY="553.0" maxWidth="80.0" minWidth="80.0" mnemonicParsing="false" prefWidth="80.0" text="Close" />
+            <Button fx:id="testButton" layoutX="384.0" layoutY="441.0" maxWidth="80.0" minWidth="80.0" mnemonicParsing="false" prefWidth="80.0" text="Test" />
+            <Button fx:id="makePrettyButton" layoutX="729.0" layoutY="31.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="60.0" text="Format Left" wrapText="true" />
+            <ListView fx:id="storedTestVariables" layoutX="798.0" layoutY="31.0" prefHeight="240.0" prefWidth="244.0" />
+            <Label layoutX="798.0" layoutY="14.0" text="Test Variables" />
+            <ListView fx:id="storedSuiteVariables" layoutX="798.0" layoutY="303.0" prefHeight="272.0" prefWidth="244.0" />
+            <Label layoutX="796.0" layoutY="282.0" text="Suite Variables" />
+            <Label layoutX="32.0" layoutY="14.0" text="Extraction Text" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
