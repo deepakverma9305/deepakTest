@@ -9,7 +9,7 @@ public class Helloworld {
 	{
 		
 				
-		System.out.println("Heloorld");
+		System.out.println("HellWorld");
 		
 		
 	}
